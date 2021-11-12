@@ -1,0 +1,31 @@
+<nav class="navbar navbar-light bg-light px-3 mb-3" class="text-center">
+  <a class="navbar-brand ;" href="#">Xóa Sách</a>
+</nav>
+<h1>Xóa Sách</h1>
+<div>
+    <hr />
+    <div class="form-group">
+        <dt class="form-group">
+          Tên Sách:
+      </dt>
+        <dd class="form-group">
+            {{book.title}}
+        </dd>
+        <dt class="form-group">
+          Tác Giả:
+      </dt>
+        <dd class="form-group">
+            {{book.author}}
+        </dd>
+        <dt class="form-group">
+          Mô Tả:
+      </dt>
+        <dd class="form-group">
+            {{book.description}}
+        </dd>
+    </div>
+</div>
+<div>
+  <button (click)="submitDelete()" class="btn btn-danger mx-1">Xóa Sách</button>
+  <button (click)="goBack()" class="btn btn-secondary mx-1">Thoát</button>
+</div>

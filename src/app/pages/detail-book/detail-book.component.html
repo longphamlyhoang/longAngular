@@ -1,0 +1,33 @@
+<nav class="navbar navbar-light bg-light px-3 mb-3" class="text-center">
+    <a class="navbar-brand ;" href="#">Chi Tiết Sách</a>
+  </nav>
+<div class="px-3 mb-3">
+    <h1>Chi Tiết Sách</h1>
+    <a style="margin: 1em;" routerLink="/" class="btn btn-primary float-end">Xem Danh Sách</a>
+</div>
+<div>
+    <hr />
+    <div class="form-group">
+        <dt class="form-group">
+            Tên Sách:
+        </dt>
+        <dd class="form-group">
+            {{book.title}}
+        </dd>
+        <dt class="form-group">
+            Tác Giả:
+        </dt>
+        <dd class="form-group">
+            {{book.author}}
+        </dd>
+        <dt class="form-group">
+            Mô Tả:
+        </dt>
+        <dd class="form-group">
+            {{book.description}}
+        </dd>
+        <div class="form-group">
+            <a class="btn btn-primary btn-block" routerLink= "/" style="margin: 5px;">Thoát</a>
+          </div>
+    </div>
+</div>
